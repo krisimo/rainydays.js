@@ -39,7 +39,7 @@ function addToCart(jacketId) {
 
     const jacketElement = document.querySelector(`[data-id='${jacketId}']`);
     if (!jacketElement) {
-        console.log("⚠️ Jacket element not found!");
+        console.log("Jacket element not found!");
         return;
     }
 
@@ -247,41 +247,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // <parameters
         if (!phoneNumber) {
-            alert("⚠️ Please enter your phone number before proceeding.");
+            alert("Please enter your phone number before proceeding.");
             return;
         }
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            alert("⚠️ Please enter a valid email address before proceeding.");
+            alert("Please enter a valid email address before proceeding.");
             return;
         }
       
         if (!fullName) {
-            alert("⚠️ Please enter a valid name before proceeding.");
+            alert("Please enter a valid name before proceeding.");
             return;
         }
 
         if (!address) {
-            alert("⚠️ Please enter a valid address before proceeding.");
+            alert("Please enter a valid address before proceeding.");
             return;
         }
 
         const cardRegex = /^\d{4} \d{4} \d{4} \d{4}$/;
         if (!cardRegex.test(cardNumber)) {
-            alert("⚠️ Please enter a valid card number (format: 1234 5678 9012 3456).");
+            alert("Please enter a valid card number (format: 1234 5678 9012 3456).");
             return;
         }
 
         const expiryRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;
         if (!expiryRegex.test(expirationDate)) {
-            alert("⚠️ Please enter a valid expiration date (MM/YY).");
+            alert("Please enter a valid expiration date (MM/YY).");
             return;
         }
 
         const cvvRegex = /^\d{3}$/;
         if (!cvvRegex.test(cvv)) {
-            alert("⚠️ Please enter a valid 3-digit CVV.");
+            alert("Please enter a valid 3-digit CVV.");
             return;
         }
 
@@ -367,7 +367,7 @@ document.addEventListener("click", event => {
         const size = event.target.getAttribute("data-size");
 
         if (!id || !size) {
-            console.log("⚠️ Remove button missing ID or size!");
+            console.log("Remove button missing ID or size!");
             return;
         }
 
