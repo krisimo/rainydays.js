@@ -138,7 +138,7 @@ function updatePaginationButtons() {
     const pageIndicator = document.getElementById("currentPage");
 
     if (!prevBtn || !nextBtn || !pageIndicator) {
-        console.error("⚠️ Pagination elements missing!");
+        console.error("Pagination elements missing!");
         return;
     }
 
